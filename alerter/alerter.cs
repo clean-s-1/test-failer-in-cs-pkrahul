@@ -6,7 +6,7 @@ namespace AlerterSpace {
         static int alertFailureCount = 0;
         static int networkAlertStub(float celcius) {
             Console.WriteLine("ALERT: Temperature is {0} celcius", celcius);
-            const int statusCode = validateTemperature(celcius);
+            int statusCode = validateTemperature(celcius);
             return statusCode;
         }
         static int validateTemperature(float celcius)
